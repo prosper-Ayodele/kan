@@ -1,0 +1,165 @@
+/* General Styles */
+
+body {
+
+  font-family: 'Poppins', sans-serif;
+
+  margin: 0;
+
+  background: linear-gradient(135deg, maroon, black);
+
+  color: gold;
+
+  text-align: center;
+
+  overflow-x: hidden;
+
+}
+
+.page {
+
+  display: none;
+
+  padding: 20px;
+
+}
+
+.page.active {
+
+  display: block;
+
+}
+
+.kango-title {
+
+  font-size: 3rem;
+
+  font-weight: bold;
+
+  text-shadow: 0 0 10px gold, 0 0 20px maroon;
+
+}
+
+/* Buttons */
+
+button {
+
+  background: linear-gradient(45deg, gold, maroon);
+
+  border: none;
+
+  color: white;
+
+  padding: 15px 30px;
+
+  font-size: 1.2rem;
+
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  margin: 15px;
+
+  transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+button:hover {
+
+  transform: scale(1.1);
+
+  box-shadow: 0 0 15px gold, 0 0 25px maroon;
+
+}
+
+.gold-button {
+
+  font-size: 1.5rem;
+
+  font-weight: bold;
+
+  padding: 20px 40px;
+
+}
+
+.nav-button, .share-button {
+
+  font-size: 1rem;
+
+}
+
+/* Scorekeeper */
+
+.scorekeeper {
+
+  font-size: 2rem;
+
+  margin: 20px;
+
+  font-weight: bold;
+
+  text-shadow: 0 0 10px gold, 0 0 15px maroon;
+
+}
+
+/* List */
+
+ul {
+
+  list-style: none;
+
+  padding: 0;
+
+}
+
+li {
+
+  font-size: 1.2rem;
+
+  margin: 10px 0;
+
+  text-shadow: 0 0 5px gold;
+
+}/* Floating points effect */
+
+.floating-point {
+
+  position: absolute;
+
+  color: gold;
+
+  font-size: 1.5rem;
+
+  font-weight: bold;
+
+  text-shadow: 0 0 10px gold, 0 0 20px maroon;
+
+  animation: float-up 1.5s ease-out forwards;
+
+  pointer-events: none;
+
+  z-index: 10;
+
+}
+
+/* Animation for floating up and disappearing */
+
+@keyframes float-up {
+
+  0% {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+  }
+
+  100% {
+
+    opacity: 0;
+
+    transform: translateY(-50px);
+
+  }
+
+}
